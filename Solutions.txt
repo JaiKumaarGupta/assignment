@@ -1,0 +1,61 @@
+//Question 1 
+public class twoVar {
+    public static void main(String[] args) {
+        int x = 2;
+        int y = 4;
+        int z = (x * y);
+        System.out.print(z);
+    }
+}
+
+
+//Question 2
+public class asciiValue {
+    public static void main(String[] args) {
+        int x = 'U';  
+        System.out.println("The ASCII Value of U is : "+x);
+    }
+
+}
+
+
+//Question 3
+public class areaRectangle {
+    public static void main(String[] args) {
+        int x = 7;
+        int y = 4;
+        int z = x * y;
+        System.out.println("The area of Rectangle is : " + z);
+    }
+
+}
+
+
+//Question 4
+public class cubeNumber {
+    public static void main(String[] args) {
+        int x = 4;
+        int cube = x * x * x;
+        System.out.println("The Cube of given Number : " + cube);
+    }
+
+}
+
+
+//Question 5
+public class swapNumbers {
+    public static void main(String[] args) {
+        int x = 2;
+        int y = 3;
+        System.out.println("The First Number before swapping is : " + x);
+        System.out.println("The Second Number before swapping is :" + y);
+        int z;
+        z = x;
+        x = y;
+        y = z;
+        System.out.println("The first number after swapping is : " + x);
+        System.out.println("The second number after swapping is :" + y);
+
+    }
+
+}
