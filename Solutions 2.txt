@@ -1,0 +1,93 @@
+//Question 1
+import java.util.Scanner;
+
+public class inputName {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Name: ");
+        String ch = sc.next();
+
+        System.out.print("Roll Number: ");
+        int r = sc.nextInt();
+
+        System.out.print("Field of interest: ");
+        String f = sc.next();
+    }
+
+}
+
+
+
+//Question 2
+import java.util.Scanner;
+
+public class differentString {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String ch = sc.nextLine();
+        String ch_1 = sc.nextLine();
+
+        System.out.print(ch  + ch_1);
+    }
+
+}
+
+
+
+//Question 3
+import java.util.Scanner;
+
+public class calculatePercentage {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int subject_1 = sc.nextInt();
+        int subject_2 = sc.nextInt();
+        int subject_3 = sc.nextInt();
+
+        int total = subject_1 + subject_2 + subject_3;
+        System.out.println("Total Marks: " + total);
+
+        int percentage = (total / 3);
+        System.out.println(percentage + "%");
+    }
+
+}
+
+
+
+//Question 4
+import java.util.Scanner;
+
+public class twoNumbers {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        for (int i = 1; i <= t; i++) {
+            int a = sc.nextInt();
+            int b = sc.nextInt();
+            int c = a + b;
+            System.out.println(c);
+        }
+    }
+
+}
+
+
+
+//Question 5
+import java.util.Scanner;
+
+public class concatenateStrings {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        while (sc.hasNextLine()) {
+            String a = sc.nextLine();
+            String b = sc.nextLine();
+            System.out.print(a + b);
+        }
+    }
+}
+
+
