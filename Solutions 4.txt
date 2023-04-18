@@ -1,0 +1,121 @@
+//Question 1
+import java.util.Scanner;
+
+public class checksquare {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter length : ");
+        int l = sc.nextInt();
+        System.out.println("Enter breadth : ");
+        int b = sc.nextInt();
+        if (l == b) {
+            System.out.println("Square");
+        } else {
+            System.out.println("Not Square");
+        }
+    }
+
+}
+
+
+//Question 2
+import java.util.Scanner;
+
+public class absolutevalue {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Number : ");
+        int num = sc.nextInt();
+        if (num < 0) {
+            num = num * (-1);
+        }
+        System.out.println("Absolute Value is : " + num);
+    }
+
+}
+
+
+
+//Question 3
+import java.util.Scanner;
+
+public class profitorloss {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Cost Price : ");
+        int cp = sc.nextInt();
+        System.out.println("Enter Selling Price : ");
+        int sp = sc.nextInt();
+        if (sp > cp) {
+            int p = sp - cp;
+            System.out.println("The Profit is : " + p);
+        } else if (cp > sp) {
+            int l = cp - sp;
+            System.out.println("The loss is : " + l);
+        } else {
+            System.out.println("There is No Profit and Loss");
+        }
+    }
+
+}
+
+
+
+//Question 4
+import java.util.Scanner;
+
+public class skipnegative {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Number : ");
+        int num = sc.nextInt();
+        if (num >= 0) {
+            System.out.println("This number is positive");
+        } else {
+            System.out.println("This number is negative hence it is skipped");
+        }
+    }
+
+}
+
+
+
+//Question 5
+import java.util.Scanner;
+
+public class calculator {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the Number : ");
+        int num1 = sc.nextInt();
+        System.out.println("Enter another Number : ");
+        int num2 = sc.nextInt();
+        System.out.println("Enter 1 for Addition");
+        System.out.println("Enter 2 for Subtraction");
+        System.out.println("Enter 3 for Multiplication");
+        System.out.println("Enter 4 for Division");
+        int num = sc.nextInt();
+        switch (num) {
+            case 1:
+                int sum = num1 + num2;
+                System.out.println("Addition of two Numbers is : " + sum);
+                break;
+            case 2:
+                int sub = num1 - num2;
+                System.out.println("Subtraction of two Numbers is : " + sub);
+                break;
+            case 3:
+                int mult = num1 * num2;
+                System.out.println("Multiplication of two Numbers is : " + mult);
+                break;
+            case 4:
+                int div = num1 / num2;
+                System.out.println("Division of two Numbers is : " + div);
+                break;
+            default:
+                System.out.println("Error");
+        }
+    }
+
+}
+
